@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Jazwin;Carly;;;
+FN:Carly Jazwin
+TITLE:Software & ML Engineer
+ORG:Arizona State University (Barrett Honors College)
+EMAIL;type=INTERNET;type=WORK;pref:cjazwin@asu.edu
+TEL;type=CELL;type=VOICE:+1-602-505-5837
+URL;type=LinkedIn:https://linkedin.com/in/carly-jazwin
+URL;type=GitHub:https://github.com/gnarlycrly
+URL;type=Portfolio:https://carlyjaz-cli-portfolio.netlify.app/
+ADR;type=HOME:;;Tempe;AZ;;USA
+END:VCARD

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carly Jazwin — Software/ML Engineer</title>
+  <meta name="description" content="Carly Jazwin — Software & ML Engineer. Resume, portfolio, and contact card." />
+  <meta property="og:title" content="Carly Jazwin — Software/ML Engineer" />
+  <meta property="og:description" content="Resume • Projects • Save Contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://carlyjaz-cli-portfolio.netlify.app/" />
+  <meta property="og:image" content="https://carlyjaz-cli-portfolio.netlify.app/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #111318;
+      --text: #e6eaf2;
+      --muted: #9aa3b2;
+      --brand: #7c3aed;
+      --brand-2: #22d3ee;
+      --ring: rgba(124,58,237,.55);
+      --chip: #12151b;
+      --chip-brd: rgba(255,255,255,.10);
+      --btn: #1a1d25;
+      --btn-brd: rgba(255,255,255,.10);
+      --tag: #0f1217;
+      --tag-brd: rgba(255,255,255,.08);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+      background:
+        radial-gradient(1200px 800px at 10% -10%, rgba(124,58,237,.12), transparent 60%),
+        radial-gradient(1000px 700px at 120% 10%, rgba(34,211,238,.10), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 24px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 20px;
+      padding: 22px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04);
+    }
+    header { display: grid; gap: 14px; align-items: center; grid-template-columns: 72px 1fr; }
+    .avatar {
+      width: 72px; height: 72px; border-radius: 18px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display:flex; align-items:center; justify-content:center;
+      font-weight:700; font-size: 28px; color: #0b0c10;
+    }
+    h1 { margin: 0; font-size: 28px; letter-spacing: .2px; }
+    .role { color: var(--muted); font-size: 14px; margin-top: 3px; }
+    .grid {
+      display: grid; gap: 12px; margin-top: 16px;
+      grid-template-columns: 1fr; 
+    }
+    @media (min-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%; min-height: 48px;
+      border-radius: var(--radius); padding: 14px 16px;
+      font-weight: 600; letter-spacing:.2px;
+      background: var(--btn); color: var(--text);
+      border: 1px solid var(--btn-brd);
+      transition: transform .08s ease, box-shadow .15s ease, border-color .15s ease, background .15s ease;
+      text-decoration: none;
+    }
+    .btn:hover { transform: translateY(-1px); border-color: var(--ring); box-shadow: 0 8px 24px rgba(124,58,237,.18); }
+    .btn:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+    .btn.primary {
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(34,211,238,.95));
+      border: 0;
+      color: #0b0c10;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .chip {
+      display:flex; align-items:center; justify-content:center;
+      padding: 10px 14px; border-radius: 999px;
+      background: var(--chip); border: 1px solid var(--chip-brd);
+      color: var(--muted); font-size: 14px; text-decoration: none;
+      transition: border-color .15s ease, color .15s ease, transform .08s ease;
+    }
+    .chip:hover { border-color: var(--ring); color: var(--text); transform: translateY(-1px); }
+    .chip:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+    .section { margin-top: 18px; }
+    .section h2 { margin: 0 0 10px 0; font-size: 13px; color: var(--muted); letter-spacing:.5px; text-transform: uppercase; }
+    .skills { display:flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      background: var(--tag); color:#cfd6e4;
+      border:1px solid var(--tag-brd);
+      padding: 6px 10px; font-size: 12px; border-radius: 999px;
+    }
+    footer { margin-top: 20px; font-size: 12px; color: var(--muted); text-align:center; }
+    a { color: inherit; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="card">
+      <header>
+        <div class="avatar" aria-hidden="true">CJ</div>
+        <div>
+          <h1>Carly Jazwin</h1>
+          <div class="role">Software & ML Engineer • 2026 CS @ ASU (Barrett)</div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <a class="btn primary" href="/CarlyJazwin_Resume_F25.pdf" target="_blank" rel="noopener">📄 View / Download Resume</a>
+        <a class="btn" href="/carly.vcf" download>👤 Save Contact (vCard)</a>
+        <a class="btn" href="mailto:cjazwin@asu.edu">✉️ Email</a>
+        <button class="btn" id="copyPhone" type="button">📱 Copy Phone</button>
+      </div>
+
+      <div class="links">
+        <a class="chip" href="https://linkedin.com/in/carly-jazwin" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="chip" href="https://github.com/gnarlycrly" target="_blank" rel="noopener">GitHub</a>
+        <a class="chip" href="https://carlyjaz-cli-portfolio.netlify.app/" target="_blank" rel="noopener">Website</a>
+      </div>
+
+      <section class="section">
+        <h2>Core Tech</h2>
+        <div class="skills">
+          <span class="tag">Python</span>
+          <span class="tag">C/C++</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">React / Next.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Hugging Face</span>
+          <span class="tag">CUDA</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Git / Docker</span>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="y"></span> Carly Jazwin · Made for NFC (NDEF URL)
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const PHONE = '+1 (602) 505-5837';
+    document.getElementById('copyPhone').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(PHONE);
+        const btn = document.getElementById('copyPhone');
+        const orig = btn.textContent;
+        btn.textContent = '✅ Copied';
+        setTimeout(()=> btn.textContent = orig, 1500);
+      } catch {
+        alert('Copy failed. Number: ' + PHONE);
+      }
+    });
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Carly Jazwin",
+    "jobTitle": "Software & ML Engineer",
+    "url": "https://carlyjaz-cli-portfolio.netlify.app/",
+    "email": "mailto:cjazwin@asu.edu",
+    "sameAs": [
+      "https://linkedin.com/in/carly-jazwin",
+      "https://github.com/gnarlycrly"
+    ]
+  }
+  </script>
+</body>
+</html>
